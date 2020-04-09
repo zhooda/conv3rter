@@ -1,8 +1,7 @@
 # conv3rter
 A simple Mac application to convert between decimal, binary, and hex.
 
-![](res/alert.png)
-![](res/main.png)
+![](res/double.png)
 
 ## Getting Started
 
