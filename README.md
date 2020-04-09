@@ -4,7 +4,11 @@ A simple Mac application to convert between decimal, binary, and hex.
 <!-- <img src="res/main.png" alt="conv3rter main window" width="400"/> -->
 ![conv3rter window with icon](res/icon.png)
 
-## Getting Started
+## Download conv3rter
+
+Download a precompiled version of conv3rter <a href="production/conv3rter0.1alpha/conv3rter.app" download>here!</a>
+
+## Building from Source
 
 These instructions will get you a copy of the project up and running
 on your local machine. This is usually just for development and testing,

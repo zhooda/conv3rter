@@ -32,23 +32,28 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
     
     @IBAction func convertButtonAction(_ sender: Any) {
-        print("The button has been pressed")
-//        updateFieldPlaceholder(decimalTextField, "this is a test")
+        
         let decimal = UInt64(decimalTextField.doubleValue)
-        let binString = String(decimal, radix: 2)
-        let hexString = String(decimal, radix: 16)
+        let binString = "0b" + String(decimal, radix: 2)
+        let hexString = "0x" + String(decimal, radix: 16).uppercased()
         
         // UPDATE TEXT FIELD PLACEHOLDERS WITH CALCULATED VALUES
         updateFieldPlaceholder(decimalTextField, String(decimal))
         updateFieldPlaceholder(binaryTextField, binString)
-        updateFieldPlaceholder(hexTextField, hexString.uppercased())
-//        print(type(of: decimal))
-//        print(binString)
-//        print(hexString.uppercased())
+        updateFieldPlaceholder(hexTextField, hexString)
+
     }
     
     private func updateFieldPlaceholder(_ field: NSTextField, _ value: String) {
         field.placeholderString = value
+    }
+    
+    func makeBrokenWarning() {
+        let alert = NSAlert.init()
+        alert.messageText = "conv3rter v" + appVersion! + " is very broken."
+        alert.informativeText = "This application is very broken at the moment. Please only use the decimal text field as all the other text fields do not function at the moment kthxbye."
+        alert.addButton(withTitle: "Take me to crapville!")
+        alert.runModal()
     }
     
     override func viewDidLoad() {
@@ -61,22 +66,5 @@ class ViewController: NSViewController, NSWindowDelegate {
         makeBrokenWarning()
     }
     
-    func makeBrokenWarning() {
-        let alert = NSAlert.init()
-        alert.messageText = "conv3rter v" + appVersion! + " is very broken."
-        alert.informativeText = "This application is very broken at the moment. Please only use the decimal text field as all the other text fields do not function at the moment kthxbye."
-        alert.addButton(withTitle: "Take me to crapville!")
-        alert.runModal()
-    }
-    
-    override func viewDidAppear() {
-//        let alert = NSAlert.init()
-//        alert.messageText = "VERY BROKEN"
-//        alert.informativeText = "This application is very broken at the moment. Please only use the decimal text field as all the other text fields do not function at the moment kthxbye."
-//        alert.addButton(withTitle: "Take me to crapville!")
-//        alert.runModal()
-
-    }
-
 }
 
