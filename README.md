@@ -1,7 +1,8 @@
 # conv3rter
 A simple Mac application to convert between decimal, binary, and hex.
 
-<img src="res/main.png" alt="conv3rter main window" width="400"/>
+<!-- <img src="res/main.png" alt="conv3rter main window" width="400"/> -->
+![conv3rter window with icon](res/icon.png)
 
 ## Getting Started
 
