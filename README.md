@@ -12,7 +12,7 @@ but we have no deployment strategies, so have at it.
 
 #### Prerequisites
 
-To use zlang you will need:
+To use conv3rter you will need:
 
 - A Mac with macOS 10.11+
 - Xcode 10.1+
