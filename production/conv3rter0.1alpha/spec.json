@@ -1,0 +1,10 @@
+{
+	"title": "conv3rter 0.1alpha",
+	"background": "background.tiff",
+	"icon": "volumeicon.png",
+	"icon-size": 80,
+	"contents": [
+		{ "x": 210, "y": 180, "type": "file", "path": "conv3rter.app"},
+		{ "x": 430, "y": 180, "type": "link", "path": "/Applications"}
+	]
+}

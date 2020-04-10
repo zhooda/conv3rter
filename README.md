@@ -6,7 +6,7 @@ A simple Mac application to convert between decimal, binary, and hex.
 
 ## Download conv3rter
 
-Download a precompiled version of conv3rter <a href="production/conv3rter0.1alpha/conv3rter.app" download>here!</a>
+Download a precompiled version of conv3rter <a href="production/conv3rter0.1alpha/conv3rter0.1alpha.dmg" download>here!</a>
 
 ## Building from Source
 
