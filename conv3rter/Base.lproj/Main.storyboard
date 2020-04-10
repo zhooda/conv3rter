@@ -40,8 +40,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="conv3rter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="761" y="346" width="240" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
@@ -129,7 +129,7 @@
                                             </textField>
                                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hEN-Je-L5Z">
                                                 <rect key="frame" x="0.0" y="0.0" width="178" height="22"/>
-                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="10101111" bezelStyle="round" id="4Tc-9u-xlr">
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="0b10101111" bezelStyle="round" id="4Tc-9u-xlr">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -161,7 +161,7 @@
                                             </textField>
                                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cIC-Tp-aat">
                                                 <rect key="frame" x="0.0" y="0.0" width="178" height="22"/>
-                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="AF" bezelStyle="round" id="dQT-Ae-z5V">
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="0bAF" bezelStyle="round" id="dQT-Ae-z5V">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

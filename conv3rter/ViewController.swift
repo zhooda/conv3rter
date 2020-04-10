@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSWindowDelegate {
+class ViewController: NSViewController, NSWindowDelegate, NSTextFieldDelegate {
     @IBOutlet weak var titleLabel: NSTextField!
     @IBOutlet weak var versionLabel: NSTextField!
     
@@ -45,7 +45,8 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
     
     private func updateFieldPlaceholder(_ field: NSTextField, _ value: String) {
-        field.placeholderString = value
+//        field.placeholderString = value
+        field.stringValue = value
     }
     
     func makeBrokenWarning() {
@@ -64,6 +65,19 @@ class ViewController: NSViewController, NSWindowDelegate {
         versionLabel.stringValue = "v" + appVersion!
         // make broken warning
         makeBrokenWarning()
+        decimalTextField.delegate = self
+    }
+    
+    func controlTextDidChange(_ obj: Notification) {
+      let textField = obj.object as! NSTextField
+      print(textField.stringValue)
+      let decimal = UInt64(decimalTextField.doubleValue)
+      let binString = "0b" + String(decimal, radix: 2)
+      let hexString = "0x" + String(decimal, radix: 16).uppercased()
+        
+        updateFieldPlaceholder(decimalTextField, String(decimal))
+        updateFieldPlaceholder(binaryTextField, binString)
+        updateFieldPlaceholder(hexTextField, hexString)
     }
     
 }
