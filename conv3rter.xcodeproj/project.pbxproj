@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484E976224416E5100F6503C /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E976124416E5100F6503C /* Converter.swift */; };
 		48CACFF6243ED9B400830FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CACFF5243ED9B400830FB4 /* AppDelegate.swift */; };
 		48CACFF8243ED9B400830FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CACFF7243ED9B400830FB4 /* ViewController.swift */; };
 		48CACFFA243ED9B500830FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CACFF9243ED9B500830FB4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		484E976124416E5100F6503C /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		48CACFF2243ED9B400830FB4 /* conv3rter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conv3rter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CACFF5243ED9B400830FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CACFF7243ED9B400830FB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				48CACFF5243ED9B400830FB4 /* AppDelegate.swift */,
 				48CACFF7243ED9B400830FB4 /* ViewController.swift */,
+				484E976124416E5100F6503C /* Converter.swift */,
 				48CACFF9243ED9B500830FB4 /* Assets.xcassets */,
 				48CACFFB243ED9B500830FB4 /* Main.storyboard */,
 				48CACFFE243ED9B500830FB4 /* Info.plist */,
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CACFF8243ED9B400830FB4 /* ViewController.swift in Sources */,
+				484E976224416E5100F6503C /* Converter.swift in Sources */,
 				48CACFF6243ED9B400830FB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +276,7 @@
 				CODE_SIGN_ENTITLEMENTS = conv3rter/conv3rter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8ZAQVXT82R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = conv3rter/Info.plist;
@@ -294,6 +299,7 @@
 				CODE_SIGN_ENTITLEMENTS = conv3rter/conv3rter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8ZAQVXT82R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = conv3rter/Info.plist;
