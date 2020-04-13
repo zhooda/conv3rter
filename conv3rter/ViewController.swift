@@ -23,6 +23,8 @@ class ViewController: NSViewController, NSWindowDelegate, NSTextFieldDelegate {
     
     private let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     private let buildVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
+    private let unsignedMax = UInt64.max
+    private let unsignedMaxString = String(UInt64.max)
     
     private func isTextField(inFocus textField: NSTextField) -> Bool {
         var inFocus = false
@@ -40,7 +42,8 @@ class ViewController: NSViewController, NSWindowDelegate, NSTextFieldDelegate {
     
     internal func controlTextDidChange(_ obj: Notification) {
         if (isTextField(inFocus: decimalTextField)) {
-            if (decimalTextField.stringValue != "" && decimalTextField.stringValue.isDecimal) {
+            let decimalString = decimalTextField.stringValue
+            if (decimalString != "" && decimalString.isDecimal && decimalString.count <= unsignedMaxString.count - 1) {
                 print("decimalTextField.inFocus = true")
                 emptyTextField(binaryTextField)
                 emptyTextField(hexTextField)
@@ -55,7 +58,8 @@ class ViewController: NSViewController, NSWindowDelegate, NSTextFieldDelegate {
             }
         }
         if (isTextField(inFocus: binaryTextField)) {
-            if (binaryTextField.stringValue != "" && binaryTextField.stringValue.isBinary) { // && decimalTextField.stringValue.isBinary) {
+            let binaryString = binaryTextField.stringValue
+            if (binaryString != "" && binaryString.isBinary && binaryString.count <= converter.decimalToBinary(dec: unsignedMax).count - 1) {
                 print("binaryTextField.inFocus = true")
                 emptyTextField(decimalTextField)
                 emptyTextField(hexTextField)
@@ -70,7 +74,8 @@ class ViewController: NSViewController, NSWindowDelegate, NSTextFieldDelegate {
             }
         }
         if (isTextField(inFocus: hexTextField)) {
-            if (hexTextField.stringValue != "" && hexTextField.stringValue.isHex) {
+            let hexString = hexTextField.stringValue
+            if (hexString != "" && hexString.isHex && hexString.count <= converter.decimalToHex(dec: unsignedMax).count - 1) {
                 print("hexTextField.inFocus = true")
                 emptyTextField(binaryTextField)
                 emptyTextField(decimalTextField)
